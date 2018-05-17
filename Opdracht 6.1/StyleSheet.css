@@ -1,0 +1,50 @@
+﻿* {
+    font-family: Tahoma;
+    font-weight: bold;
+}
+html, body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+#wrapper, #footer {
+    background-color: dodgerblue;
+    color: white;
+    text-align: center;
+}
+#wrapper {
+    font-size: 42px;
+}
+#sidebar {
+    position: absolute;
+    width: 20%;
+    left: 0;
+}
+#sidebar li {
+        padding: 5px 0;
+}
+#main {
+    background-color: red;
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    right: 0;
+    text-align: center;
+}
+#main p {
+        padding-top: 50px
+}
+#error {
+    position: relative;
+}
+#submit {
+    background-color: dodgerblue;
+    border: dodgerblue 2px solid;
+    color: white;
+}
+#footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 999;
+}

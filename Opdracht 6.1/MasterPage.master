@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="logInHead" runat="server">
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder id="overviewHead" runat="server">
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder id="addHead" runat="server">
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder id="manageHead" runat="server">
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder id="infoHead" runat="server">
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder id="signOutHead" runat="server">
+    </asp:ContentPlaceHolder>
+    <!-- Main stylesheet -->
+    <link href="StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ContentPlaceHolder id="loginContainer" runat="server">
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder id="overviewContainer" runat="server">
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder id="addContainer" runat="server">
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder id="manageContainer" runat="server">
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder id="infoContainer" runat="server">
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder id="signOutContainer" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
