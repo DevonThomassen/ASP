@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <!-- Main stylesheet -->
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="headContainer" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ContentPlaceHolder id="container" runat="server">
+        </asp:ContentPlaceHolder>
+        <div id="sidebar">
+            <ul>
+                <li><a href="overview.aspx">Huiswerk overzicht</a></li>
+                <li><a href="add.aspx">Huiswerk toegvoegen</a></li>
+                <li><a href="manage.aspx">Vakken beheren</a></li>
+                <li><a href="info.aspx">Mijn gegevens</a></li>
+                <li><a href="signOut.aspx">Uitloggen</a></li>
+            </ul>
+        </div>
+        <div id="footer">
+            Devon Thomassen
+        </div>
+    </form>
+</body>
+</html>

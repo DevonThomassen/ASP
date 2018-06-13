@@ -1,0 +1,51 @@
+﻿/* General */
+* {
+    font-family: Tahoma;
+    font-weight: bold;
+}
+html, body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+#wrapper, #footer {
+    background-color: dodgerblue;
+    color: white;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+/* Header */
+#wrapper {
+    font-size: 42px;
+}
+/* Sidebar */
+#sidebar {
+    position: absolute;
+    width: 20%;
+    left: 0;
+}
+#sidebar ul {
+    list-style: none;
+    padding-left: 20px;
+}
+#sidebar li {
+    padding: 5px 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+/* Main */
+#main {
+    position: absolute;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    background-color: red;
+}
+/* Footer */
+#footer {
+    position: fixed;
+    bottom: 0;
+}
