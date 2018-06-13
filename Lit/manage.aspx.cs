@@ -15,7 +15,7 @@ public partial class _Default : System.Web.UI.Page
 
     protected void submitInsert_Click(object sender, EventArgs e) {
         string connectie;
-        connectie = @"Data Source=DEVONTHOMASSEN\SQLEXPRESS;";
+        connectie = @"Data Source=x\SQLEXPRESS;";
         connectie += "Initial Catalog=homework; Integrated Security=True";
         SqlConnection conn = new SqlConnection(connectie);
         SqlCommand cmd = new SqlCommand("INSERT INTO subject (name) VALUES ('" + insert.Text + "')", conn);
